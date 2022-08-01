@@ -7,7 +7,7 @@ export default function HomePage() {
     <Baner />
     <div className='alt'>
     <img src="./asset/farhan.svg" alt="foto"></img>
-      <h2>About Me</h2>
+      <h2>Tentang Saya</h2>
       <p>Nama Lengkap saya farhan Amin Saya saya lahir 9 september 1996 saat ini saya tinggal di kota medan saat ini saya sedang tahap skripsi dan fokus untuk mengikuti coding bootcamp salt academy</p>
         <p>Hobi saya berenang dan camping sama saya sangat suka akan dunia technology blockchain khusus nya nft </p>
       </div>

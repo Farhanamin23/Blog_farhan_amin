@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import axios, { AxiosResponse } from 'axios'
 import './login.css'
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
+  const navigate = useNavigate();
   const [username, setUsername] = useState<string>("")
   const [password, setPassword] = useState<string>("")
-  
   const login = () => {
     axios.post("http://localhost:8000/login", {
       username,
@@ -14,7 +15,7 @@ export default function Login() {
       withCredentials: true
     }).then((res : AxiosResponse) => {
       if (res.data === "berhasil") {
-      window.location.href = "/"
+      navigate('/')
     }
     }, () => {
       console.log("gagal");

@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { myContext } from '../Pages/Context/Context'
 import Axios, { AxiosResponse } from 'axios';
 
 export default function NavBar() {
-  // const navigation = useNavigation();
+  const navigate = useNavigate();
   const ctx = useContext(myContext);
 
   const logout = () => {
@@ -12,7 +12,7 @@ export default function NavBar() {
       withCredentials: true
     }).then((res : AxiosResponse) => {
       if (res.data === "berhasil") {
-        window.location.href = "/";
+        navigate('/')
       }
     })
   }
