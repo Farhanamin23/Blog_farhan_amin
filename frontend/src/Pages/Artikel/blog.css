@@ -1,0 +1,55 @@
+.blog {
+text-align: center;
+}
+
+.kotak
+{
+    border: 1px solid gainsboro;
+    padding: 11px;
+    margin-bottom: 15px;
+}
+.kotak h3
+{
+    background-color: #1966FF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 13px;
+}
+.kotak img
+{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.kotak p
+{
+    margin-bottom: 10px;
+}
+
+.menu-kiri
+{
+    width: 300px;
+    margin-right: 10px;
+    float: left;
+}
+.menu-tengah
+{
+    width: 600px;
+    margin-right: 10px;
+    float: left;
+}
+.menu-tengah h3
+{
+    background: none;
+    color: #1966FF;
+    margin-bottom: 0;
+}
+.tanggal-posting
+{
+    color: gray;
+    text-align: right;
+    font-size: 12px;
+    margin-bottom: 10px;
+    display: block;
+}

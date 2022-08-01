@@ -23,7 +23,7 @@ export default function NavBar() {
         <>
           <Link onClick={logout} to={'/'}>Logout</Link>
           {ctx.isAdmin ? (<Link to="/admin">Admin</Link>) : null}
-          <Link to="/user">User</Link>
+          <Link to="/artikel">Artikel</Link>
         </>
       ) : (
         <>

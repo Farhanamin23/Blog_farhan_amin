@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./Components/NavBar";
-import { Home, Admin, Login, User, Register } from "./Pages";
+import { Home, Admin, Login, Register, Artikel } from "./Pages";
 import { myContext } from "./Pages/Context/Context";
 
 const App: React.FC = () => {
@@ -15,7 +15,7 @@ const App: React.FC = () => {
             ctx ? (
               <>
               {<Route path="/admin" element={<Admin />}></Route>}
-              <Route path="/user" element={< User/>} />
+              <Route path="/artikel" element={< Artikel/>} />
               </>
             ) : (
                 <>
