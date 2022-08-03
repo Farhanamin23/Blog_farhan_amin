@@ -1,0 +1,15 @@
+#deleteuser{
+  padding-right: 17%;
+}
+
+.delete {
+  background-color: hsl(0, 88%, 41%); 
+  border: none;
+  position: relative;
+  right: -27%;
+  margin-top: -2px;
+  color: white;
+  padding: 12px 20px;
+  font-size: 10px;
+  width: 7%;
+}

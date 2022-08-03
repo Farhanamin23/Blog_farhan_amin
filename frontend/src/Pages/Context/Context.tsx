@@ -7,7 +7,7 @@ export const myContext = createContext<any>({})
   const [user, setUser] = useState<any>()
   
   useEffect(() => {
-    Axios.get("http://localhost:8000/user", { withCredentials: true }).then(res => {
+    Axios.get("http://localhost:8000/get", { withCredentials: true }).then(res => {
       setUser(res.data);
     })
   },[])

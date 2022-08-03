@@ -1,6 +1,6 @@
 import  Axios  from 'axios'
 import React, { useEffect, useState } from 'react'
-
+import  './admin.css'
 export default function AdminPage() {
   const [data, setData] = useState<any>();
   const [selectedUser, setSelectedUser] = useState<string>();
@@ -42,7 +42,9 @@ export default function AdminPage() {
         
         } 
       </select>
-      <button onClick={deleteUser}>Delete User</button>
+      <div>
+      <button onClick={deleteUser} className='delete'>Delete User</button>
+  </div>
     </div>
   )
 }
