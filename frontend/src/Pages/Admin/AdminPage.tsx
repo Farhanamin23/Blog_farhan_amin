@@ -30,9 +30,9 @@ export default function AdminPage() {
   }
   return (
     <div>
-      <h2>Admin page hanya admin  yang bisa lihat </h2>
+      <h4>Admin page hanya admin  yang bisa lihat </h4>
       <select onChange={e => setSelectedUser(e.target.value)} name="deleteuser" id='deleteuser' aria-label='deleteuser'>
-      <option id="Pilih User">Pilih Data User</option>
+      <option id="Select User">Select User</option>
         {
           data.map((item: any) => {
             return (

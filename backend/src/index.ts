@@ -13,7 +13,6 @@ import { DatabaseUserInterface, UserInterface, } from './interfaces/Userinterfac
 dotenv.config();
 const LocalStrategy = passportLocal.Strategy
     
-    //atlas selalu eror di saat saya koneksi dengan dotenv mas
   //${process.env.PART1STRING}${process.env.USERNAME}${process.env.PASSWORD}${process.env.PART2STRING}
 mongoose.connect(`mongodb+srv://farhan:farhan@cluster0.aughysi.mongodb.net/?retryWrites=true&w=majority`, {
   useCreateIndex: true,
@@ -21,7 +20,7 @@ mongoose.connect(`mongodb+srv://farhan:farhan@cluster0.aughysi.mongodb.net/?retr
   useUnifiedTopology: true
 }, (err) => {
   if (err) throw err;
-  console.log("berhasil terkoneksi")
+  console.log("success connected")
 });
 
 // Middleware 
@@ -105,7 +104,7 @@ const isAdministratorMiddleware = (req: Request, res: Response, next: NextFuncti
         next();
       }
       else {
-        res.send("Sorry, only admin's can perform this.")
+        res.send("Sorry, only admin can perform this.")
       }
     })
   }
@@ -155,9 +154,8 @@ app.post("/deleteuser",isAdministratorMiddleware, async (req, res) => {
 // })
 
 
-
 app.listen(8000, () => {
-  console.log("server berjalan di port 8000");
+  console.log("server running in port 8000");
   
 });
 
