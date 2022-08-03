@@ -4,7 +4,7 @@ import "./artikel.css"
 export default function Artikel() {
   return (
     <>
-    <body>
+    <div>
       <div className='row'>
       <div className='leftcolumn'>
         <div className='card'>
@@ -34,7 +34,7 @@ export default function Artikel() {
         </div>
       </div>
         </div>
-  </body>
+  </div>
     </>
   )
 }
