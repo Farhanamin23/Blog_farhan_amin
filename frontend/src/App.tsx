@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import "bootstrap/dist/css/bootstrap.min.css"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import NavBar from "./Components/NavBar";
 import { Home, Admin, Login, Register, Artikel } from "./Pages";

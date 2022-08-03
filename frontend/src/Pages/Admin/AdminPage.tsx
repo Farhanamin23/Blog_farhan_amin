@@ -31,12 +31,12 @@ export default function AdminPage() {
   return (
     <div>
       <h4>Admin Pages Only admin can see this page </h4>
-      <select onChange={e => setSelectedUser(e.target.value)} name="deleteuser" id='deleteuser' aria-label='deleteuser'>
-      <option id="Select User">Select User</option>
+      <select onChange={e => setSelectedUser(e.target.value)} name="deleteuser" key='deleteuser' id='deleteuser' aria-label='deleteuser'>
+      <option key="Select User">Select User</option>
         {
           data.map((item: any) => {
             return (
-              <option id={item.username}>{item.username}</option>
+              <option key={item.username}>{item.username}</option>
           )
         })  
         
