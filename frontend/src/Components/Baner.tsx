@@ -5,8 +5,7 @@ export default function Baner() {
     <>
     <section className='header'>
       <h1>Welcome To My Website</h1>
-      <h4>i'm Farhan Amin </h4>
-      <h6 className='btn-bgstroke'> Contact Me</h6>
+      <h6 className='btn-bgstroke'> i'm Farhan Amin </h6>
     </section>
     </>
   )

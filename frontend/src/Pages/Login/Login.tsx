@@ -14,11 +14,11 @@ export default function Login() {
     }, {
       withCredentials: true
     }).then((res : AxiosResponse) => {
-      if (res.data === "berhasil") {
+      if (res.data === "succes") {
       navigate('/')
     }
     }, () => {
-      console.log("gagal");
+      console.log("failure");
     })
   }
   return (

@@ -13,7 +13,7 @@ import { DatabaseUserInterface, UserInterface, } from './interfaces/Userinterfac
 dotenv.config();
 const LocalStrategy = passportLocal.Strategy
     
-  //${process.env.PART1STRING}${process.env.USERNAME}${process.env.PASSWORD}${process.env.PART2STRING}
+                 //${process.env.PART1STRING}${process.env.USERNAME}${process.env.PASSWORD}${process.env.PART2STRING}
 mongoose.connect(`mongodb+srv://farhan:farhan@cluster0.aughysi.mongodb.net/?retryWrites=true&w=majority`, {
   useCreateIndex: true,
   useNewUrlParser: true,
@@ -113,7 +113,7 @@ const isAdministratorMiddleware = (req: Request, res: Response, next: NextFuncti
   }
 }
 app.post("/login", passport.authenticate("local"), (req, res) => {
-  res.send("Succes Terautotentikasi");
+  res.send("Success Terautotentikasi");
 });
 
 app.get("/user", (req, res) => {

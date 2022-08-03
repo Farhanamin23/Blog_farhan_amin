@@ -30,7 +30,7 @@ export default function AdminPage() {
   }
   return (
     <div>
-      <h4>Admin page hanya admin  yang bisa lihat </h4>
+      <h4>Admin Pages Only admin can see this page </h4>
       <select onChange={e => setSelectedUser(e.target.value)} name="deleteuser" id='deleteuser' aria-label='deleteuser'>
       <option id="Select User">Select User</option>
         {
