@@ -6,7 +6,19 @@ export default function HomePage() {
     <>
     <Baner />
     <div className='alt'>
-    <img src="./asset/farhan.svg" alt="foto"></img>
+      <div className="box">
+      <div className="content">
+      <img src="./asset/farhan.svg" alt="foto"></img>
+    <h2>
+      Farhan Amin
+      <br />
+      <span>Software Engineer</span>
+    </h2>
+    <a href="/register">Hire Me</a>
+  </div>
+</div>
+    <br >
+      </br>
       <h2>About Me</h2>
       <p>My fully name is farhan Amin I was born 9 September 1996 I currently live in the city of Medan I am currently in the thesis stage and focus on participating in coding bootcamp salt academy</p>
       <p>My hobbies are swimming and camping, I really like the world of blockchain technology, especially NFT</p>
@@ -40,16 +52,15 @@ export default function HomePage() {
                 <span id="confirm"></span>
               </h3>
               <p>Name *</p>
-              <input id="txt_name" type="text" />
+              <input id="txt_name" type="text" placeholder='Name'/>
               <p>Email *</p>
-              <input id="txt_email" type="text" />
+              <input id="txt_email" type="text"  placeholder='Email'/>
               <p>Phone *</p>
-              <input id="txt_phone" type="text" />
+              <input id="txt_phone" type="text" placeholder='phone' />
               <p>Subject *</p>
-              <input id="txt_subject" type="text" />
+              <input id="txt_subject" type="text" placeholder='subject' />
               <p>Message *</p>
-              <textarea id="txt_message" rows={4} cols={20} defaultValue={""}
-              />
+              <textarea id="txt_message" placeholder='messege' rows={4} cols={20} defaultValue={""}/>
               <input type="submit" id="btn_send" defaultValue="SEND" />
             </div>
           </div>

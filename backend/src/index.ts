@@ -115,7 +115,7 @@ app.post("/login", passport.authenticate("local"), (req, res) => {
   res.send("Success Terautotentikasi");
 });
 
-app.get("/get", (req, res) => {
+app.get("/user", (req, res) => {
   res.send(req.user);
 });
 
