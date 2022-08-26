@@ -31,9 +31,9 @@ export default function Login() {
   <form>
     <h3>Login</h3>
     <label htmlFor="username">Username</label>
-        <input type="text" placeholder=" Username" id="username" onChange={e => setUsername(e.target.value)} />
+        <input type="text" placeholder=" Username" id="username" required value={username} onChange={e => setUsername(e.target.value)} />
         <label htmlFor="password">Password</label>
-        <input type="password" placeholder="Password" id="password"  onChange={e => setPassword(e.target.value)} />
+        <input type="password" placeholder="Password" id="password" required value={password}  onChange={e => setPassword(e.target.value)} />
         <button type="submit" className="btn" onClick={login}>Login</button>
       </form>  
   </div>
