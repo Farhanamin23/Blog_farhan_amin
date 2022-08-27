@@ -25,7 +25,7 @@ mongoose.connect(`mongodb+srv://farhan:farhan@cluster0.aughysi.mongodb.net/?retr
 // Middleware 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:3000", credentials: true }))
+app.use(cors({ origin: "*", credentials: true }))
 app.use(
   session({
     secret: "secretcode",

@@ -8,7 +8,7 @@ export default function NavBar() {
   const ctx = useContext(myContext);
 
   const logout = () => {
-    Axios.delete("http://localhost:8000/logout", {
+    Axios.delete("http://103.181.142.239:8000/api/logout", {
       withCredentials: true
     }).then((res : AxiosResponse) => {
       if (res.data === "berhasil") {

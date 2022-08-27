@@ -8,7 +8,7 @@ export default function AdminPage() {
   const [data, setData] = useState<any>();
   const [selectedUser, setSelectedUser] = useState<string>();
   useEffect(() => {
-    Axios.get("http://localhost:8000/getalluser", {
+    Axios.get("http://103.181.142.239:8000/api/getalluser", {
       withCredentials: true
     }).then(res => {
       setData(res.data)
@@ -40,7 +40,7 @@ export default function AdminPage() {
         userid = item._id
       }
     })
-    Axios.post("http://localhost:8000/deleteuser", {
+    Axios.post("http://103.181.142.239:8000/api/deleteuser", {
       id: userid     
     }, {
       withCredentials:true
